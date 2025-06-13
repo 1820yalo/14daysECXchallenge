@@ -6,32 +6,85 @@
     <title>CatPhotoApp</title>
 </head>
 <body>
-    <main>
+    <header>
         <h1>CatPhotoApp</h1>
-        <section>
-            <h2>Cat Photo</h2>
+        <nav>
+            <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery</p>
+        </nav>
+    </header>
+    <main>
+        <article>            
+            <section>
+                <h2>Cat Photo</h2>
 
-            <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cat.jpg">cute cats</a> omline?</p>
-            <p>See more <a href="https:freecatphotoapp.com" target="_blank">cat photos</a> in our gallery</p>
+                <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cat.jpg">cute cats</a> online?</p>
+                <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery</p>
 
-            <a href="https:freecatphotoapp.com">
-                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
-            </a>
-        </section>
-        <section>
-            <h2>Cat Lists</h2>
-            <h3>Things cats love:</h3>
-            <ul>
-                <li>Cat nip</li>
-                <li>Laser pointers</li>
-                <li>Lasagna</li>
-            </ul>
-            <figure>
-                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/Lasagna.jpg" alt="A slice of lasagna on a plate.">
-                <figcaption>Cats <em>love</em> lasagna</figcaption>
-            </figure>
-            <h3>Top 3 things cat hates:</h3>
-        </section>
+                <a href="https:freecatphotoapp.com">
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+                </a>
+            </section>
+
+            <aside>
+                <section>
+                    <h2>Cat Lists</h2>
+                    <h3>Things cats love:</h3>
+                    <ul>
+                        <li>Cat nip</li>
+                        <li>Laser pointers</li>
+                        <li>Lasagna</li>
+                    </ul>
+                    <figure>
+                        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                        <figcaption>Cats <em>love</em> lasagna</figcaption>
+                    </figure>
+                    <h3>Top 3 things cat hates:</h3>
+                    <ol>
+                        <li>Flea Treatment</li>
+                        <li>Thunder</li>
+                        <li>Other cats</li>
+                    </ol>
+                    <figure>
+                        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                        <figcaption>Cats <strong>hates</strong> other cats.</figcaption>
+                    </figure>
+                </section>
+            </aside>
+            <section>
+                <h2>Cat form</h2>
+                
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+
+                    <fieldset>
+                        <legend>Is your cat indoor or outdoor?</legend>
+
+                        <label>
+                            <input checked type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor
+                        </label>
+                        <label>
+                            <input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"> Outdoor
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>What's your cat's personality?</legend>
+                        <input checked type="checkbox" name="personality" id="loving" value="loving"> <label for="loving">Loving</label>
+                        <input type="checkbox" name="personality" id="lazy" value="lazy"> <label for="lazy">Lazy</label>
+                        <input type="checkbox" name="personality" id="energetic" value="energetic"> <label for="energetic">Energetic</label>
+                    </fieldset>
+
+                    <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                    <button type="submit">Submit</button>
+                    <output name="result"></output>
+                </form>
+            </section>
+        </article>
     </main>
+    <footer>
+        <p>
+            No Copyright - <a href="https://www.freecodecamp.org">freecodecamp.org</a>
+
+        </p>
+    </footer>
 </body>
 </html>
